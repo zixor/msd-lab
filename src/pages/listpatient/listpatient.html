@@ -1,0 +1,42 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Pacientes</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+
+  <ion-list>
+
+    <ion-item-sliding *ngFor="let patient of patients">
+      <ion-item (click)="edit(patient.id)">
+        <button ion-fab color="{{patient.color}}" item-left style="box-shadow:none;">
+            <ion-icon name="md-contact"></ion-icon>
+        </button>
+        <h2 item-center *ngIf="patient">{{patient.name}}</h2>
+        <p item-center *ngIf="patient"> Edad - {{patient.age}}</p>
+        <ion-note item-right *ngIf="patient">{{patient.lastreview}}</ion-note>
+        <button ion-button item-right icon-end color="danger">
+          {{patient.id}}
+        <ion-icon name="md-flask"></ion-icon>
+        </button>
+      </ion-item>
+      <ion-item-options>
+        <button ion-button color="secondary" icon-left (click)="call(patient.phonenumber)">
+          <ion-icon name="ios-call" ></ion-icon>
+          Llamar
+        </button>
+        <button ion-button color="danger" icon-left (click)="share()">
+          <ion-icon name="ios-chatbubbles" ></ion-icon>
+          Chatear
+        </button>
+      </ion-item-options>
+    </ion-item-sliding>
+
+  </ion-list>
+
+</ion-content>
