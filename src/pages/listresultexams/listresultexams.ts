@@ -7,7 +7,9 @@ import { NavController, NavParams } from 'ionic-angular';
 })
 export class ListresultexamsPage {
 
+ private order = {};
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.order = navParams.data;
   }
 
   ionViewDidLoad() {

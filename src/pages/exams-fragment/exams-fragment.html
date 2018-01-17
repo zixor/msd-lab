@@ -1,3 +1,13 @@
-<ion-content padding>
-
-</ion-content>
+<ion-card>
+    <ion-card-header>
+        Exámenes
+    </ion-card-header>
+    <ion-card-content>
+        <ion-list>
+            <ion-item *ngFor="let exam of order.exams">
+                <h2> {{exam.id}} -{{exam.name}}</h2>
+                <ion-note item-right *ngIf="exam">{{exam.state}}</ion-note>
+            </ion-item>
+        </ion-list>
+    </ion-card-content>
+</ion-card>

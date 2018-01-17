@@ -1,21 +1,16 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { NavController, NavParams } from 'ionic-angular';
 
-/**
- * Generated class for the ExamsFragmentPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-
-@IonicPage()
 @Component({
   selector: 'page-exams-fragment',
   templateUrl: 'exams-fragment.html',
 })
 export class ExamsFragmentPage {
 
+  private order = {};
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.order = navParams.data;
   }
 
   ionViewDidLoad() {

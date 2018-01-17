@@ -46,12 +46,12 @@ export class UtilitiesService {
             "exams": [{
                 "id": "Z001",
                 "name": "Frotis Uñas y Garganta",
-                "state": 1
+                "state": "Sin realizar "
             },
             {
                 "id": "Z002",
                 "name": "Gripe-Influenza",
-                "state": 2
+                "state": "Realizado"
             }
             ]
         }, {

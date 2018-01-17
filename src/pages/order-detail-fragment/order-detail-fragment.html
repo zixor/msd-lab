@@ -1,3 +1,42 @@
 <ion-content padding>
 
+    <ion-card>
+        <ion-card-header>
+            Número Orden {{id}}
+        </ion-card-header>
+        <ion-card-content>
+            <h2>Fecha de emisión: {{emission_date}}, Hora: {{time}}</h2>
+        </ion-card-content>
+    </ion-card>
+
+    <ion-card>
+        <ion-card-header>
+            Información del Paciente
+        </ion-card-header>
+        <ion-item>
+            <ion-avatar item-left>
+                <img src="https://ionicframework.com/dist/preview-app/www/assets/img/marty-avatar.png">
+            </ion-avatar>
+            <h2> {{order.patient.name}} </h2>
+            <p>November 5, 1955</p>
+        </ion-item>
+
+        <ion-card-content>
+            <h2>Última revisión: {{order.patient.last_appointment}}</h2>
+            <p>Edad: {{order.patient.age}}</p>
+            <p>Sexo: {{order.patient.gender}}</p>
+        </ion-card-content>
+    </ion-card>
+
+    <ion-card>
+        <ion-card-header>
+            Diagnóstic
+        </ion-card-header>
+        <ion-card-content>
+            <ion-list>
+                <ion-item *ngFor="let dx of order.diagnostic">{{dx.id}} -{{dx.name}}</ion-item>
+            </ion-list>
+        </ion-card-content>
+    </ion-card>
+
 </ion-content>
