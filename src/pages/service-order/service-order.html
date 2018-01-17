@@ -1,0 +1,17 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>ServiceOrder</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+{{order.patient.name}}
+<ion-tabs>
+  <ion-tab [root]="tab1Root" tabTitle="Orden" tabIcon="ios-paper-outline"></ion-tab>
+  <ion-tab [root]="tab2Root" tabTitle="Proveedor" tabIcon="ios-pulse-outline"></ion-tab>
+  <ion-tab [root]="tab3Root" tabTitle="Examenes" tabIcon="ios-flask"></ion-tab>
+</ion-tabs>
+</ion-content>

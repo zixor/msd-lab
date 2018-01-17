@@ -12,6 +12,11 @@ import { ListlabsPage } from "../pages/listlabs/listlabs";
 import { ListpatientPage } from "../pages/listpatient/listpatient";
 import { ListresultexamsPage } from "../pages/listresultexams/listresultexams";
 import { ListtopicscommunityPage } from "../pages/listtopicscommunity/listtopicscommunity";
+import { UtilitiesService } from "../providers/utilities.service";
+import { ServiceOrderPage } from "../pages/service-order/service-order";
+import { ExamsFragmentPage } from "../pages/exams-fragment/exams-fragment";
+import { OrderDetailFragmentPage } from "../pages/order-detail-fragment/order-detail-fragment";
+import { ProvidersFragmentPage } from "../pages/providers-fragment/providers-fragment";
 
 @NgModule({
   declarations: [
@@ -21,7 +26,11 @@ import { ListtopicscommunityPage } from "../pages/listtopicscommunity/listtopics
     ListlabsPage,
     ListpatientPage,
     ListresultexamsPage,
-    ListtopicscommunityPage
+    ListtopicscommunityPage,
+    ServiceOrderPage,
+    ExamsFragmentPage,
+    OrderDetailFragmentPage,
+    ProvidersFragmentPage
   ],
   imports: [
     BrowserModule,
@@ -35,11 +44,16 @@ import { ListtopicscommunityPage } from "../pages/listtopicscommunity/listtopics
     ListlabsPage,
     ListpatientPage,
     ListresultexamsPage,
-    ListtopicscommunityPage    
+    ListtopicscommunityPage,
+    ServiceOrderPage,
+    ExamsFragmentPage,
+    OrderDetailFragmentPage,
+    ProvidersFragmentPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
+    UtilitiesService,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
