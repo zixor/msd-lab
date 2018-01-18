@@ -10,12 +10,12 @@ export class UtilitiesService {
 
     getPatients() {
         return [
-            { "name": "Juan Carlos Restrepo", "age": "24", "gender": "Hombre", "avatar":"https://raw.githubusercontent.com/Ashwinvalento/cartoon-avatar/master/lib/images/male/1.png", "id": 1, "phonenumber": "3166266373", "color": "warm-1", "lastreview": "Feb 25, 2017" },
-            { "name": "Monica Lucia Gil", "age": "33", "gender": "Mujer", "avatar":"https://raw.githubusercontent.com/Ashwinvalento/cartoon-avatar/master/lib/images/female/2.png","id": 2, "phonenumber": "3166266373", "color": "warm-2", "lastreview": "Ago 23, 2017" },
-            { "name": "David Nolberto Gonzalez", "age": "30", "gender": "Hombre","avatar":"https://raw.githubusercontent.com/Ashwinvalento/cartoon-avatar/master/lib/images/male/3.png", "id": 3, "phonenumber": "3166266373", "color": "warm-3", "lastreview": "Jun 15, 2017" },
-            { "name": "Laura Maria Betancur", "age": "21", "gender": "Mujer", "avatar":"https://raw.githubusercontent.com/Ashwinvalento/cartoon-avatar/master/lib/images/female/4.png", "id": 4, "phonenumber": "3166266373", "color": "warm-4", "lastreview": "Nov 1, 2017" },
-            { "name": "Esteban Salazar", "age": "44", "gender": "Hombre", "id": 5, "avatar":"https://raw.githubusercontent.com/Ashwinvalento/cartoon-avatar/master/lib/images/male/5.png","phonenumber": "3166266373", "color": "warm-5", "lastreview": "Nov 1, 2017" },
-            { "name": "Jhon Garces", "age": "34", "gender": "Hombre", "avatar":"https://raw.githubusercontent.com/Ashwinvalento/cartoon-avatar/master/lib/images/male/6.png","id": 6, "phonenumber": "3166266373", "color": "warm-6", "lastreview": "Dic 26, 2017" }
+            { "name": "Juan Carlos Restrepo", "age": "24", "gender": "Hombre", "avatar": "assets/avatars/1.png", "id": 1, "phonenumber": "3166266373", "color": "warm-1", "lastreview": "Feb 25, 2017" },
+            { "name": "Monica Lucia Gil", "age": "33", "gender": "Mujer", "avatar": "assets/avatars/2.png","id": 2, "phonenumber": "3166266373", "color": "warm-2", "lastreview": "Ago 23, 2017" },
+            { "name": "David Nolberto Gonzalez", "age": "30", "gender": "Hombre","avatar": "assets/avatars/3.png", "id": 3, "phonenumber": "3166266373", "color": "warm-3", "lastreview": "Jun 15, 2017" },
+            { "name": "Laura Maria Betancur", "age": "21", "gender": "Mujer", "avatar": "assets/avatars/4.png", "id": 4, "phonenumber": "3166266373", "color": "warm-4", "lastreview": "Nov 1, 2017" },
+            { "name": "Esteban Salazar", "age": "44", "gender": "Hombre", "id": 5, "avatar": "assets/avatars/5.png","phonenumber": "3166266373", "color": "warm-5", "lastreview": "Nov 1, 2017" },
+            { "name": "Jhon Garces", "age": "34", "gender": "Hombre", "avatar": "assets/avatars/6.png","id": 6, "phonenumber": "3166266373", "color": "warm-6", "lastreview": "Dic 26, 2017" }
         ];
     }
 
@@ -33,7 +33,7 @@ export class UtilitiesService {
             },
             "patient": {
                 "id": 1,
-                "avatar": "https://raw.githubusercontent.com/Ashwinvalento/cartoon-avatar/master/lib/images/male/1.png",
+                "avatar": "assets/avatars/1.png",
                 "name": "Juan Carlos Restrepo",
                 "age": "24",
                 "gender": "Hombre",
@@ -79,7 +79,7 @@ export class UtilitiesService {
             },
             "patient": {
                 "id": 2,
-                 "avatar": "https://raw.githubusercontent.com/Ashwinvalento/cartoon-avatar/master/lib/images/female/2.png",
+                "avatar": "assets/avatars/2.png",
                 "name": "Monica Lucia Gil",
                 "age": "33",
                 "gender": "Mujer",
@@ -125,7 +125,7 @@ export class UtilitiesService {
             },
             "patient": {
                 "id": 3,
-                "avatar": "https://raw.githubusercontent.com/Ashwinvalento/cartoon-avatar/master/lib/images/male/3.png",
+                "avatar": "assets/avatars/3.png",
                 "name": "David Nolberto Gonzalez",
                 "age": "30",
                 "gender": "Hombre",
@@ -171,7 +171,7 @@ export class UtilitiesService {
             },
             "patient": {
                 "id": 4,
-                "avatar": "https://raw.githubusercontent.com/Ashwinvalento/cartoon-avatar/master/lib/images/female/4.png",
+                "avatar": "assets/avatars/4.png",
                 "name": "Laura Maria Betancur",
                 "age": "33",
                 "gender": "Mujer",
@@ -217,7 +217,7 @@ export class UtilitiesService {
             },
             "patient": {
                 "id": 5,
-                "avatar": "https://raw.githubusercontent.com/Ashwinvalento/cartoon-avatar/master/lib/images/male/5.png",
+                "avatar": "assets/avatars/5.png",
                 "name": "Esteban Salazar",
                 "age": "44",
                 "gender": "Hombre",
@@ -263,7 +263,7 @@ export class UtilitiesService {
             },
             "patient": {
                 "id": 6,
-                "avatar": "https://raw.githubusercontent.com/Ashwinvalento/cartoon-avatar/master/lib/images/male/6.png",
+                "avatar": "assets/avatars/6.png",
                 "name": "Jhon Garces",
                 "age": "34",
                 "gender": "Hombre",
