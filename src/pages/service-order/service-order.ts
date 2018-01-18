@@ -5,7 +5,7 @@ import { HomePage } from "../home/home";
 import { OrderDetailFragmentPage } from "../order-detail-fragment/order-detail-fragment";
 import { ProvidersFragmentPage } from "../providers-fragment/providers-fragment";
 import { ExamsFragmentPage } from "../exams-fragment/exams-fragment";
-import { InfusionesFragmentPage } from "../infusiones-fragment/infusiones-fragment";
+import { TratamientoFragmentPage } from "../tratamiento-fragment/tratamiento-fragment";
 
 @Component({
   selector: 'page-service-order',
@@ -19,7 +19,7 @@ export class ServiceOrderPage {
   tab1Root: any = OrderDetailFragmentPage;
   tab2Root: any = ProvidersFragmentPage;
   tab3Root: any = ExamsFragmentPage;
-  tab4Root: any = InfusionesFragmentPage;
+  tab4Root: any = TratamientoFragmentPage;
 
   constructor(public navCtrl: NavController,
     public navParams: NavParams,

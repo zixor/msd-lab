@@ -2,10 +2,10 @@
 
     <ion-card>
         <ion-card-header>
-            Número Orden {{id}}
+            Número Orden {{order.id}}
         </ion-card-header>
         <ion-card-content>
-            <h2>Fecha de emisión: {{emission_date}}, Hora: {{time}}</h2>
+            <h2>Fecha de emisión: {{order.emission_date}}, Hora: {{order.time}}</h2>
         </ion-card-content>
     </ion-card>
 
@@ -13,28 +13,28 @@
         <ion-card-header>
             Información del Paciente
         </ion-card-header>
-        <ion-item>
-            <ion-avatar item-left>
-                <img src="https://ionicframework.com/dist/preview-app/www/assets/img/marty-avatar.png">
-            </ion-avatar>
-            <h2> {{order.patient.name}} </h2>
-            <p>November 5, 1955</p>
-        </ion-item>
 
         <ion-card-content>
+            <ion-item>
+                <ion-avatar item-left>
+                    <img src="{{order.patient.avatar}}">
+                </ion-avatar>
+                <h2> {{order.patient.name}} </h2>
+                <p>November 5, 1955</p>
+            </ion-item>
             <h2>Última revisión: {{order.patient.last_appointment}}</h2>
-            <p>Edad: {{order.patient.age}}</p>
+            <p>Edad: {{order.patient.age}} años</p>
             <p>Sexo: {{order.patient.gender}}</p>
         </ion-card-content>
     </ion-card>
 
     <ion-card>
         <ion-card-header>
-            Diagnóstic
+            Diagnóstico
         </ion-card-header>
         <ion-card-content>
             <ion-list>
-                <ion-item *ngFor="let dx of order.diagnostic">{{dx.id}} -{{dx.name}}</ion-item>
+                <ion-item *ngFor="let dx of order.diagnostic">{{dx.id}} - {{dx.name}}</ion-item>
             </ion-list>
         </ion-card-content>
     </ion-card>

@@ -1,0 +1,20 @@
+<ion-content padding>
+    <ion-list>
+        <ion-item *ngFor="let dx of diagnostic">
+            <ion-card>
+                <ion-card-header>
+                    Diagnostico {{dx.id}} - {{dx.name}}
+                </ion-card-header>
+                <ion-card-content>
+                    <ion-list>
+                        <ion-item *ngFor="let t of dx.medical_treatment">
+                            <h2> Medicamento: {{t.medicine}} -{{t.dose}} </h2>
+                            <p>Tomar por {{t.duration_in_days}} días.</p>
+                            <p>Cada {{t.supply_time_in_hours}} horas.</p>
+                        </ion-item>
+                    </ion-list>
+                </ion-card-content>
+            </ion-card>
+        </ion-item>
+    </ion-list>
+</ion-content>

@@ -17,6 +17,7 @@ import { ServiceOrderPage } from "../pages/service-order/service-order";
 import { ExamsFragmentPage } from "../pages/exams-fragment/exams-fragment";
 import { OrderDetailFragmentPage } from "../pages/order-detail-fragment/order-detail-fragment";
 import { ProvidersFragmentPage } from "../pages/providers-fragment/providers-fragment";
+import { TratamientoFragmentPage } from "../pages/tratamiento-fragment/tratamiento-fragment";
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { ProvidersFragmentPage } from "../pages/providers-fragment/providers-fra
     ServiceOrderPage,
     ExamsFragmentPage,
     OrderDetailFragmentPage,
-    ProvidersFragmentPage
+    ProvidersFragmentPage,
+    TratamientoFragmentPage
   ],
   imports: [
     BrowserModule,
@@ -40,7 +42,7 @@ import { ProvidersFragmentPage } from "../pages/providers-fragment/providers-fra
   entryComponents: [
     MyApp,
     HomePage,
-    ListPage,    
+    ListPage,
     ListlabsPage,
     ListpatientPage,
     ListresultexamsPage,
@@ -48,13 +50,14 @@ import { ProvidersFragmentPage } from "../pages/providers-fragment/providers-fra
     ServiceOrderPage,
     ExamsFragmentPage,
     OrderDetailFragmentPage,
-    ProvidersFragmentPage
+    ProvidersFragmentPage,
+    TratamientoFragmentPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
     UtilitiesService,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    { provide: ErrorHandler, useClass: IonicErrorHandler }
   ]
 })
-export class AppModule {}
+export class AppModule { }

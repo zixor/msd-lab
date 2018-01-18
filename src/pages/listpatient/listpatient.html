@@ -1,11 +1,15 @@
 <ion-header>
-
-  <ion-navbar>
-    <ion-title>Pacientes</ion-title>
+  <ion-navbar color="header">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title style="text-align:center;">
+      Pacientes
+    </ion-title>
+    <ion-buttons end>      
+    </ion-buttons>
   </ion-navbar>
-
 </ion-header>
-
 
 <ion-content padding>
 
@@ -14,14 +18,14 @@
 
     <ion-item-sliding *ngFor="let patient of patients">
       <ion-item (click)="edit(patient.id)">
-        <button ion-fab color="{{patient.color}}" item-left style="box-shadow:none;">
-            <ion-icon name="md-contact"></ion-icon>
-        </button>
+        <ion-avatar item-left>
+                <img src="{{patient.avatar}}">
+        </ion-avatar>
         <h2 item-center *ngIf="patient">{{patient.name}}</h2>
-        <p item-center *ngIf="patient"> Edad - {{patient.age}}</p>
-        <ion-note item-right *ngIf="patient">{{patient.lastreview}}</ion-note>
+        <p item-center *ngIf="patient"> Edad - {{patient.age}} años</p>
+        <ion-note item-right *ngIf="patient">Cita Médica: {{patient.lastreview}}</ion-note>
         <button ion-button item-right icon-end color="danger">
-          Pendientes - {{patient.id}}
+         *  {{patient.id}} 
         <ion-icon name="md-flask"></ion-icon>
         </button>
       </ion-item>
