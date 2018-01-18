@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { UtilitiesService } from "../../providers/utilities.service";
-import { HomePage } from "../home/home";
 import { OrderDetailFragmentPage } from "../order-detail-fragment/order-detail-fragment";
 import { ProvidersFragmentPage } from "../providers-fragment/providers-fragment";
 import { ExamsFragmentPage } from "../exams-fragment/exams-fragment";
