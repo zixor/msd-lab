@@ -23,7 +23,7 @@
         </ion-avatar>
         <h2 item-center *ngIf="patient">{{patient.name}}</h2>
         <p item-center *ngIf="patient"> Edad - {{patient.age}} años</p>
-        <ion-note item-right *ngIf="patient">Cita Médica: {{patient.lastreview}}</ion-note>
+        <ion-note item-right *ngIf="patient"> {{patient.lastreview}}</ion-note>
         <button ion-button item-right icon-end color="danger">
          * 
         <ion-icon name="md-flask"></ion-icon>
