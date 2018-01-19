@@ -20,6 +20,7 @@ import { ProvidersFragmentPage } from "../pages/providers-fragment/providers-fra
 import { TratamientoFragmentPage } from "../pages/tratamiento-fragment/tratamiento-fragment";
 import { ExamDetailPage } from "../pages/exam-detail/exam-detail";
 import { CongresosMedicosListPage } from "../pages/congresos-medicos-list/congresos-medicos-list";
+import { ListchatsPage } from "../pages/listchats/listchats";
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { CongresosMedicosListPage } from "../pages/congresos-medicos-list/congre
     ProvidersFragmentPage,
     TratamientoFragmentPage,
     ExamDetailPage,
-    CongresosMedicosListPage
+    CongresosMedicosListPage,
+    ListchatsPage
   ],
   imports: [
     BrowserModule,
@@ -57,7 +59,8 @@ import { CongresosMedicosListPage } from "../pages/congresos-medicos-list/congre
     ProvidersFragmentPage,
     TratamientoFragmentPage,
     ExamDetailPage,
-    CongresosMedicosListPage
+    CongresosMedicosListPage,
+    ListchatsPage
   ],
   providers: [
     StatusBar,

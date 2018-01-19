@@ -8,6 +8,7 @@ import { ListpatientPage } from "../pages/listpatient/listpatient";
 import { ListlabsPage } from "../pages/listlabs/listlabs";
 import { ListtopicscommunityPage } from "../pages/listtopicscommunity/listtopicscommunity";
 import { CongresosMedicosListPage } from "../pages/congresos-medicos-list/congresos-medicos-list";
+import { ListchatsPage } from "../pages/listchats/listchats";
 
 @Component({
   templateUrl: 'app.html'
@@ -28,7 +29,7 @@ export class MyApp {
       { title: 'Pacientes', component: ListpatientPage,  icon: "ios-people"},       
       { title: 'Laboratorios', component: ListlabsPage, icon: "ios-flask" },
       { title: 'Congresos Médicos', component: CongresosMedicosListPage, icon: "ios-git-network" },
-      { title: 'Comunidad Especialistas', component: ListtopicscommunityPage, icon: "ios-school" }
+      { title: 'Comunidad Especialistas', component: ListchatsPage, icon: "ios-school" }
     ];
 
   }
