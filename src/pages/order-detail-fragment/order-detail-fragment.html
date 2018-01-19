@@ -28,14 +28,9 @@
                     </ion-col>
                     <ion-col>
                         <h3> {{order.patient.name}} </h3>
-                    </ion-col>
-                </ion-row>
-                <ion-row>
-                    <ion-col>
-                        <p>November 5, 1955</p>
-                        <h3>Última revisión: {{order.patient.last_appointment}}</h3>
                         <p>Edad: {{order.patient.age}} años</p>
                         <p>Sexo: {{order.patient.gender}}</p>
+                        <h3>Última revisión: {{order.patient.last_appointment}}</h3>
                     </ion-col>
                 </ion-row>
             </ion-grid>
@@ -59,10 +54,6 @@
                     </ion-col>
                     <ion-col>
                         <h3>{{order.medic.name}}</h3>
-                    </ion-col>
-                </ion-row>
-                <ion-row>
-                    <ion-col>
                         <h3>Especialidad: {{order.medic.specialist}}</h3>
                         <p>Teléfono: {{order.medic.phone_number}}</p>
                     </ion-col>
