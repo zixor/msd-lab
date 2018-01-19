@@ -1,12 +1,14 @@
-
 <ion-content padding>
- <ion-card>
-        <ion-card-header>
+    <ion-card>
+        <ion-card-header text-wrap no-lines >
            {{order.provider.prestador}}
         </ion-card-header>
         <ion-card-content>
-             <h2>Nit - {{order.provider.nit}}</h2>
-            <p>Dirección: {{order.provider.address}}, Teléfono: {{order.provider.phone}}</p>
+            <ion-item>
+                <h3 style="padding-top: 2px;">Nit - {{order.provider.nit}}</h3>
+                <p>Dirección: {{order.provider.address}} </p>
+                <p> Teléfono: {{order.provider.phone}}</p>
+            </ion-item>
         </ion-card-content>
     </ion-card>
 </ion-content>

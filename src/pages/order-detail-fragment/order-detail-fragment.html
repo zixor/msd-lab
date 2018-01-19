@@ -5,7 +5,10 @@
             Número Orden {{order.id}}
         </ion-card-header>
         <ion-card-content>
-            <h2>Fecha de emisión: {{order.emission_date}}, Hora: {{order.time}}</h2>
+            <ion-item>
+                <h3>Fecha de emisión: {{order.emission_date}}</h3>
+                <h3> Hora: {{order.time}} p.m</h3>
+            </ion-item>
         </ion-card-content>
     </ion-card>
 
@@ -13,35 +16,58 @@
         <ion-card-header>
             Información del Paciente
         </ion-card-header>
-
         <ion-card-content>
-            <ion-item>
-                <ion-avatar item-left>
-                    <img src="{{order.patient.avatar}}">
-                </ion-avatar>
-                <h2> {{order.patient.name}} </h2>
-                <p>November 5, 1955</p>
-            </ion-item>
-            <h2>Última revisión: {{order.patient.last_appointment}}</h2>
-            <p>Edad: {{order.patient.age}} años</p>
-            <p>Sexo: {{order.patient.gender}}</p>
+            <ion-grid>
+                <ion-row>
+                    <ion-col>
+                        <ion-item>
+                            <ion-avatar item-left>
+                                <img src="{{order.patient.avatar}}">
+                            </ion-avatar>
+                        </ion-item>
+                    </ion-col>
+                    <ion-col>
+                        <h3> {{order.patient.name}} </h3>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col>
+                        <p>November 5, 1955</p>
+                        <h3>Última revisión: {{order.patient.last_appointment}}</h3>
+                        <p>Edad: {{order.patient.age}} años</p>
+                        <p>Sexo: {{order.patient.gender}}</p>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
         </ion-card-content>
     </ion-card>
 
     <ion-card>
         <ion-card-header>
-           Información del Médico
+            Información del Médico
         </ion-card-header>
 
         <ion-card-content>
-            <ion-item>
-                <ion-avatar item-left>
-                    <img src="{{order.medic.avatar}}">
-                </ion-avatar>
-                <h2>{{order.medic.name}}</h2>
-            </ion-item>
-            <h2>Especialidad: {{order.medic.specialist}}</h2>
-            <p>Teléfono: {{order.medic.phone_number}}</p>
+            <ion-grid>
+                <ion-row>
+                    <ion-col>
+                        <ion-item>
+                            <ion-avatar item-left>
+                                <img src="{{order.medic.avatar}}">
+                            </ion-avatar>
+                        </ion-item>
+                    </ion-col>
+                    <ion-col>
+                        <h3>{{order.medic.name}}</h3>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col>
+                        <h3>Especialidad: {{order.medic.specialist}}</h3>
+                        <p>Teléfono: {{order.medic.phone_number}}</p>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
         </ion-card-content>
     </ion-card>
 
@@ -51,7 +77,9 @@
         </ion-card-header>
         <ion-card-content>
             <ion-list>
-                <ion-item *ngFor="let dx of order.diagnostic">{{dx.id}} - {{dx.name}}</ion-item>
+                <ion-item *ngFor="let dx of order.diagnostic">
+                    <h3>{{dx.id}} - {{dx.name}}</h3>
+                </ion-item>
             </ion-list>
         </ion-card-content>
     </ion-card>

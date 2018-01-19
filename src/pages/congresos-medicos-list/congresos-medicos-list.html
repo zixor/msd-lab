@@ -6,22 +6,24 @@
     <ion-title style="text-align:center;">
       Congresos Médicos
     </ion-title>
-    <ion-buttons end>      
+    <ion-buttons end>
     </ion-buttons>
   </ion-navbar>
 </ion-header>
 <ion-content padding>
-    <ion-list>
-        <ion-item *ngFor="let congres of congress">
-            <ion-card>
-                <ion-card-header>
-                   {{congres.name}}
-                </ion-card-header>
-                <ion-card-content>
-                  <h2> {{congres.date}}</h2>
-                  <p style="color: #FFA730">{{congres.location}}</p>
-                </ion-card-content>
-            </ion-card>
-        </ion-item>
-    </ion-list>
+  <ion-list>
+    <ion-item *ngFor="let congres of congress">
+      <ion-card>
+        <ion-card-header>
+            <h3 text-wrap no-lines> {{congres.name}}</h3>
+        </ion-card-header>
+        <ion-card-content>
+          <ion-item>
+            <h3> {{congres.date}}</h3>
+            <p style="color: #FFA730">{{congres.location}}</p>
+          </ion-item>
+        </ion-card-content>
+      </ion-card>
+    </ion-item>
+  </ion-list>
 </ion-content>

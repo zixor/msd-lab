@@ -5,13 +5,13 @@
     <ion-card-content>
         <ion-list>
             <ion-item *ngFor="let exam of order.exams">
-                <h2> {{exam.id}} - {{exam.name}}</h2>
+                <h3 text-wrap no-lines style="padding-top: 2px;"> {{exam.id}} - {{exam.name}}</h3>
                 <button *ngIf="exam.state==1" ion-button item-right icon-end color="danger">
-                    No Realizado
+                    <h3 style="color: white;">No Realizado</h3>
                     <ion-icon name="md-flask"></ion-icon>
                 </button>
                 <button *ngIf="exam.state==2" (click)="openExam(exam.link_ref);" ion-button item-right icon-end color="warm-8">
-                    Realizado
+                    <h3 style="color: white;">Realizado</h3>
                     <ion-icon name="md-flask"></ion-icon>
                 </button>
             </ion-item>

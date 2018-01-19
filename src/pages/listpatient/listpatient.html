@@ -21,13 +21,19 @@
         <ion-avatar item-left>
                 <img src="{{patient.avatar}}">
         </ion-avatar>
-        <h2 item-center *ngIf="patient">{{patient.name}}</h2>
+        <h3 item-center *ngIf="patient">{{patient.name}}</h3>
         <p item-center *ngIf="patient"> Edad - {{patient.age}} años</p>
-        <ion-note item-right *ngIf="patient"> {{patient.lastreview}}</ion-note>
-        <button ion-button item-right icon-end color="danger">
-         * 
-        <ion-icon name="md-flask"></ion-icon>
+        
+
+
+        <button ion-button *ngIf="patient.id==2" item-right icon-center color="secondary">        
+          <ion-icon name="md-flask" ></ion-icon>
         </button>
+
+       <button ion-button *ngIf="patient.id !=2 " item-right icon-center color="danger">        
+          <ion-icon name="md-flask"></ion-icon>
+        </button>
+
       </ion-item>
       <ion-item-options>
         <button ion-button color="secondary" icon-left (click)="call(patient.phonenumber)">

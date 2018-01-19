@@ -419,39 +419,18 @@ export class UtilitiesService {
             "phone": "3457777"
         },
         {
-            "id": "00873",
-            "prestador": "SARAMED S.A.S",
-            "nit": "800.2.3",
-            "address": "Avenida Siempre Viva 123",
-            "phone": "3457777"
+            "id": "00253",
+            "prestador": "MERCO SALUD S.A.S",
+            "nit": "414.44.53",
+            "address": "Calle 23 # 35-12",
+            "phone": "4362663"
         },
         {
-            "id": "00873",
-            "prestador": "SARAMED S.A.S",
-            "nit": "800.2.3",
-            "address": "Avenida Siempre Viva 123",
-            "phone": "3457777"
-        },
-        {
-            "id": "00873",
-            "prestador": "SARAMED S.A.S",
-            "nit": "800.2.3",
-            "address": "Avenida Siempre Viva 123",
-            "phone": "3457777"
-        },
-        {
-            "id": "00873",
-            "prestador": "SARAMED S.A.S",
-            "nit": "800.2.3",
-            "address": "Avenida Siempre Viva 123",
-            "phone": "3457777"
-        },
-        {
-            "id": "00873",
-            "prestador": "SARAMED S.A.S",
-            "nit": "800.2.3",
-            "address": "Avenida Siempre Viva 123",
-            "phone": "3457777"
+            "id": "004252",
+            "prestador": "PROCAPS S.A.S",
+            "nit": "243.24.36",
+            "address": "Cra 45 # 56-78",
+            "phone": "5464644"
         }
         ]
     }
