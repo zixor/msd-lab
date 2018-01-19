@@ -1,0 +1,32 @@
+<ion-header>
+
+  <ion-navbar color="header">
+    <button ion-button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title style="text-align:center;">Detalle de Exámen</ion-title>
+    <ion-buttons end>
+      <button ion-button ion-button icon-only (click)="closeModal();">
+          <ion-icon name="ios-close"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-item>
+    <img src="{{linkref}}">
+  </ion-item>
+
+  <ion-card>
+    <ion-card-header>
+      Nota 2018/01/18 02:45 p.m
+    </ion-card-header>
+    <ion-card-content>
+      <p>
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat
+        ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.
+      </p>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

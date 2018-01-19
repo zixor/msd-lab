@@ -10,7 +10,7 @@
                     No Realizado
                     <ion-icon name="md-flask"></ion-icon>
                 </button>
-                <button *ngIf="exam.state==2" ion-button item-right icon-end color="warm-8">
+                <button *ngIf="exam.state==2" (click)="openExam(exam.link_ref);" ion-button item-right icon-end color="warm-8">
                     Realizado
                     <ion-icon name="md-flask"></ion-icon>
                 </button>

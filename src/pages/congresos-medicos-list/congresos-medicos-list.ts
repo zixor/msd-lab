@@ -3,17 +3,17 @@ import { NavController, NavParams } from 'ionic-angular';
 import { UtilitiesService } from "../../providers/utilities.service";
 
 @Component({
-  selector: 'page-listlabs',
-  templateUrl: 'listlabs.html',
+  selector: 'page-congresos-medicos-list',
+  templateUrl: 'congresos-medicos-list.html',
 })
-export class ListlabsPage {
+export class CongresosMedicosListPage {
 
-  private providers: any[] = [];
+  private congress: any[] = [];
 
   constructor(public navCtrl: NavController,
     public navParams: NavParams,
     private utilitiesService: UtilitiesService) {
-    this.providers = this.utilitiesService.getProviders();
+    this.congress = this.utilitiesService.getCongress();
   }
 
   ionViewDidLoad() {

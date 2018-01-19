@@ -18,6 +18,8 @@ import { ExamsFragmentPage } from "../pages/exams-fragment/exams-fragment";
 import { OrderDetailFragmentPage } from "../pages/order-detail-fragment/order-detail-fragment";
 import { ProvidersFragmentPage } from "../pages/providers-fragment/providers-fragment";
 import { TratamientoFragmentPage } from "../pages/tratamiento-fragment/tratamiento-fragment";
+import { ExamDetailPage } from "../pages/exam-detail/exam-detail";
+import { CongresosMedicosListPage } from "../pages/congresos-medicos-list/congresos-medicos-list";
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import { TratamientoFragmentPage } from "../pages/tratamiento-fragment/tratamien
     ExamsFragmentPage,
     OrderDetailFragmentPage,
     ProvidersFragmentPage,
-    TratamientoFragmentPage
+    TratamientoFragmentPage,
+    ExamDetailPage,
+    CongresosMedicosListPage
   ],
   imports: [
     BrowserModule,
@@ -51,7 +55,9 @@ import { TratamientoFragmentPage } from "../pages/tratamiento-fragment/tratamien
     ExamsFragmentPage,
     OrderDetailFragmentPage,
     ProvidersFragmentPage,
-    TratamientoFragmentPage
+    TratamientoFragmentPage,
+    ExamDetailPage,
+    CongresosMedicosListPage
   ],
   providers: [
     StatusBar,

@@ -11,11 +11,11 @@ export class UtilitiesService {
     getPatients() {
         return [
             { "name": "Juan Carlos Restrepo", "age": "24", "gender": "Hombre", "avatar": "assets/avatars/1.png", "id": 1, "phonenumber": "3166266373", "color": "warm-1", "lastreview": "Feb 25, 2017" },
-            { "name": "Monica Lucia Gil", "age": "33", "gender": "Mujer", "avatar": "assets/avatars/2.png","id": 2, "phonenumber": "3166266373", "color": "warm-2", "lastreview": "Ago 23, 2017" },
-            { "name": "David Nolberto Gonzalez", "age": "30", "gender": "Hombre","avatar": "assets/avatars/3.png", "id": 3, "phonenumber": "3166266373", "color": "warm-3", "lastreview": "Jun 15, 2017" },
+            { "name": "Monica Lucia Gil", "age": "33", "gender": "Mujer", "avatar": "assets/avatars/2.png", "id": 2, "phonenumber": "3166266373", "color": "warm-2", "lastreview": "Ago 23, 2017" },
+            { "name": "David Nolberto Gonzalez", "age": "30", "gender": "Hombre", "avatar": "assets/avatars/3.png", "id": 3, "phonenumber": "3166266373", "color": "warm-3", "lastreview": "Jun 15, 2017" },
             { "name": "Laura Maria Betancur", "age": "21", "gender": "Mujer", "avatar": "assets/avatars/4.png", "id": 4, "phonenumber": "3166266373", "color": "warm-4", "lastreview": "Nov 1, 2017" },
-            { "name": "Esteban Salazar", "age": "44", "gender": "Hombre", "id": 5, "avatar": "assets/avatars/5.png","phonenumber": "3166266373", "color": "warm-5", "lastreview": "Nov 1, 2017" },
-            { "name": "Jhon Garces", "age": "34", "gender": "Hombre", "avatar": "assets/avatars/6.png","id": 6, "phonenumber": "3166266373", "color": "warm-6", "lastreview": "Dic 26, 2017" }
+            { "name": "Esteban Salazar", "age": "44", "gender": "Hombre", "id": 5, "avatar": "assets/avatars/5.png", "phonenumber": "3166266373", "color": "warm-5", "lastreview": "Nov 1, 2017" },
+            { "name": "Jhon Garces", "age": "34", "gender": "Hombre", "avatar": "assets/avatars/6.png", "id": 6, "phonenumber": "3166266373", "color": "warm-6", "lastreview": "Dic 26, 2017" }
         ];
     }
 
@@ -40,8 +40,15 @@ export class UtilitiesService {
                 "phone_number": "3166266373",
                 "last_appointment": "Feb 25, 2017"
             },
+            "medic": {
+                "id": 1,
+                "avatar": "assets/avatars/profesional.png",
+                "name": "Guillermo Andrés Velasco B.",
+                "phone_number": "316789072",
+                "specialist": "Oncología Médica"
+            },
             "diagnostic": [{
-                "id": "A013",               
+                "id": "A013",
                 "name": "FIEBRE PARATIFOIDEA C",
                 "medical_treatment": [{
                     "medicine": "Isoniazid (H)",
@@ -53,17 +60,19 @@ export class UtilitiesService {
                     "dose": "150 ml",
                     "duration_in_days": "12",
                     "supply_time_in_hours": "12"
-                }]               
+                }]
             }],
             "exams": [{
                 "id": "Z001",
                 "name": "Frotis Uñas y Garganta",
-                "state": "1 "
+                "state": "1 ",
+                "link_ref": ""
             },
             {
                 "id": "Z002",
                 "name": "Gripe-Influenza",
-                "state": "2"
+                "state": "2",
+                "link_ref": "assets/files/dummy.png"
             }
             ]
         }, {
@@ -86,6 +95,13 @@ export class UtilitiesService {
                 "phone_number": "3166266373",
                 "last_appointment": "Ago 23, 2017"
             },
+            "medic": {
+                "id": 1,
+                "avatar": "assets/avatars/profesional.png",
+                "name": "Guillermo Andrés Velasco B.",
+                "phone_number": "316789072",
+                "specialist": "Oncología Médica"
+            },
             "diagnostic": [{
                 "id": "A013",
                 "name": "FIEBRE PARATIFOIDEA C",
@@ -109,7 +125,8 @@ export class UtilitiesService {
             {
                 "id": "Z002",
                 "name": "Gripe-Influenza",
-                "state": "2"
+                "state": "2",
+                "link_ref": "assets/files/dummy.png"
             }
             ]
         }, {
@@ -132,6 +149,13 @@ export class UtilitiesService {
                 "phone_number": "3166266373",
                 "last_appointment": "Jun 15, 2017"
             },
+            "medic": {
+                "id": 1,
+                "avatar": "assets/avatars/profesional.png",
+                "name": "Guillermo Andrés Velasco B.",
+                "phone_number": "316789072",
+                "specialist": "Oncología Médica"
+            },
             "diagnostic": [{
                 "id": "A013",
                 "name": "FIEBRE PARATIFOIDEA C",
@@ -150,12 +174,14 @@ export class UtilitiesService {
             "exams": [{
                 "id": "Z001",
                 "name": "Frotis Uñas y Garganta",
-                "state": "1"
+                "state": "1 ",
+                "link_ref": ""
             },
             {
                 "id": "Z002",
                 "name": "Gripe-Influenza",
-                "state": "1"
+                "state": "1 ",
+                "link_ref": ""
             }
             ]
         }, {
@@ -178,6 +204,13 @@ export class UtilitiesService {
                 "phone_number": "3166266373",
                 "last_appointment": "Nov 1, 2017"
             },
+            "medic": {
+                "id": 1,
+                "avatar": "assets/avatars/profesional.png",
+                "name": "Guillermo Andrés Velasco B.",
+                "phone_number": "316789072",
+                "specialist": "Oncología Médica"
+            },
             "diagnostic": [{
                 "id": "A013",
                 "name": "FIEBRE PARATIFOIDEA C",
@@ -196,12 +229,14 @@ export class UtilitiesService {
             "exams": [{
                 "id": "Z001",
                 "name": "Frotis Uñas y Garganta",
-                "state": "1"
+                "state": "1 ",
+                "link_ref": ""
             },
             {
                 "id": "Z002",
                 "name": "Gripe-Influenza",
-                "state": "2"
+                "state": "2",
+                "link_ref": "assets/files/dummy.png"
             }
             ]
         }, {
@@ -224,6 +259,13 @@ export class UtilitiesService {
                 "phone_number": "3166266373",
                 "last_appointment": "Nov 1, 2017"
             },
+            "medic": {
+                "id": 1,
+                "avatar": "assets/avatars/profesional.png",
+                "name": "Guillermo Andrés Velasco B.",
+                "phone_number": "316789072",
+                "specialist": "Oncología Médica"
+            },
             "diagnostic": [{
                 "id": "A013",
                 "name": "FIEBRE PARATIFOIDEA C",
@@ -242,12 +284,14 @@ export class UtilitiesService {
             "exams": [{
                 "id": "Z001",
                 "name": "Frotis Uñas y Garganta",
-                "state": "1"
+                "state": "1 ",
+                "link_ref": ""
             },
             {
                 "id": "Z002",
                 "name": "Gripe-Influenza",
-                "state": "1"
+                "state": "1 ",
+                "link_ref": ""
             }
             ]
         }, {
@@ -270,6 +314,13 @@ export class UtilitiesService {
                 "phone_number": "3166266373",
                 "last_appointment": "Dic 26, 2017"
             },
+            "medic": {
+                "id": 1,
+                "avatar": "assets/avatars/profesional.png",
+                "name": "Guillermo Andrés Velasco B.",
+                "phone_number": "316789072",
+                "specialist": "Oncología Médica"
+            },
             "diagnostic": [{
                 "id": "A013",
                 "name": "FIEBRE PARATIFOIDEA C",
@@ -288,15 +339,122 @@ export class UtilitiesService {
             "exams": [{
                 "id": "Z001",
                 "name": "Frotis Uñas y Garganta",
-                "state": "1"
+                "state": "1 ",
+                "link_ref": ""
             },
             {
                 "id": "Z002",
                 "name": "Gripe-Influenza",
-                "state": "1"
+                "state": "1 ",
+                "link_ref": ""
             }
             ]
         }];
     }
+
+    getCongress() {
+        return [{
+            "id": "1",
+            "name": "XX CONGRESO ACTUALIZACION GINECOLOGIA Y OBSTETRICIA. FUNDACION SANTA FE DE BOGOTA",
+            "date": "del 02 al 04 de marzo de 2018",
+            "location": "CARTAGENA DE INDIAS, Colombia"
+        },
+        {
+            "id": "2",
+            "name": "XVIII Simposio Internacional de Neumología y Alergia Pediátrica",
+            "date": "del 20 al 21 de abril de 2018",
+            "location": "Cartagena de Indias, Colombia"
+        },
+        {
+            "id": "2",
+            "name": "XVIII Simposio Internacional de Neumología y Alergia Pediátrica",
+            "date": "del 20 al 21 de abril de 2018",
+            "location": "Cartagena de Indias, Colombia"
+        },
+        {
+            "id": "2",
+            "name": "XVIII Simposio Internacional de Neumología y Alergia Pediátrica",
+            "date": "del 20 al 21 de abril de 2018",
+            "location": "Cartagena de Indias, Colombia"
+        },
+        {
+            "id": "3",
+            "name": "Maternal-Fetal Imaging 2018: Advances in OB-GYN Ultrasound",
+            "date": "del 19 al 21 de enero de 2018",
+            "location": "San Antonio, Texas, Estados Unidos"
+        },
+        {
+            "id": "4",
+            "name": "ECOGRAFI OBSTÉTRICO-GINECOLÓGICA ",
+            "date": "23 de enero de 2018",
+            "location": "Barcelona, España"
+        },
+        {
+            "id": "5",
+            "name": "Congreso Entre Dos Manos",
+            "date": "del 26 al 27 de enero de 2018",
+            "location": "MADRID, España"
+        },
+        {
+            "id": "6",
+            "name": "XIV Congreso Internacional de Ginecología y Obstetricia ISAMI 2018 ",
+            "date": "del 21 al 24 de febrero de 2018",
+            "location": "Quito, Ecuador"
+        },
+        {
+            "id": "7",
+            "name": "VII FORO DE SALUD SEXUAL",
+            "date": "del 23 al 24 de febrero de 2018",
+            "location": "Alicante, España"
+        },
+        ];
+    }
+
+    getProviders() {
+        return [{
+            "id": "00873",
+            "prestador": "SARAMED S.A.S",
+            "nit": "800.2.3",
+            "address": "Avenida Siempre Viva 123",
+            "phone": "3457777"
+        },
+        {
+            "id": "00873",
+            "prestador": "SARAMED S.A.S",
+            "nit": "800.2.3",
+            "address": "Avenida Siempre Viva 123",
+            "phone": "3457777"
+        },
+        {
+            "id": "00873",
+            "prestador": "SARAMED S.A.S",
+            "nit": "800.2.3",
+            "address": "Avenida Siempre Viva 123",
+            "phone": "3457777"
+        },
+        {
+            "id": "00873",
+            "prestador": "SARAMED S.A.S",
+            "nit": "800.2.3",
+            "address": "Avenida Siempre Viva 123",
+            "phone": "3457777"
+        },
+        {
+            "id": "00873",
+            "prestador": "SARAMED S.A.S",
+            "nit": "800.2.3",
+            "address": "Avenida Siempre Viva 123",
+            "phone": "3457777"
+        },
+        {
+            "id": "00873",
+            "prestador": "SARAMED S.A.S",
+            "nit": "800.2.3",
+            "address": "Avenida Siempre Viva 123",
+            "phone": "3457777"
+        }
+        ]
+    }
+
 
 }

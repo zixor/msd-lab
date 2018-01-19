@@ -30,6 +30,23 @@
 
     <ion-card>
         <ion-card-header>
+           Información del Médico
+        </ion-card-header>
+
+        <ion-card-content>
+            <ion-item>
+                <ion-avatar item-left>
+                    <img src="{{order.medic.avatar}}">
+                </ion-avatar>
+                <h2>{{order.medic.name}}</h2>
+            </ion-item>
+            <h2>Especialidad: {{order.medic.specialist}}</h2>
+            <p>Teléfono: {{order.medic.phone_number}}</p>
+        </ion-card-content>
+    </ion-card>
+
+    <ion-card>
+        <ion-card-header>
             Diagnóstico
         </ion-card-header>
         <ion-card-content>

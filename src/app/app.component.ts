@@ -7,6 +7,7 @@ import { HomePage } from '../pages/home/home';
 import { ListpatientPage } from "../pages/listpatient/listpatient";
 import { ListlabsPage } from "../pages/listlabs/listlabs";
 import { ListtopicscommunityPage } from "../pages/listtopicscommunity/listtopicscommunity";
+import { CongresosMedicosListPage } from "../pages/congresos-medicos-list/congresos-medicos-list";
 
 @Component({
   templateUrl: 'app.html'
@@ -23,10 +24,11 @@ export class MyApp {
 
     // used for an example of ngFor and navigation
     this.pages = [
-      { title: 'DashBoard', component: HomePage, icon: "md-analytics" },
-      { title: 'Pacientes', component: ListpatientPage,  icon: "md-people"},       
-      { title: 'Laboratorio', component: ListlabsPage, icon: "md-flask" },
-      { title: 'Comunidad Especialistas', component: ListtopicscommunityPage, icon: "md-school" }
+      { title: 'DashBoard', component: HomePage, icon: "ios-analytics" },
+      { title: 'Pacientes', component: ListpatientPage,  icon: "ios-people"},       
+      { title: 'Laboratorios', component: ListlabsPage, icon: "ios-flask" },
+      { title: 'Congresos Médicos', component: CongresosMedicosListPage, icon: "ios-git-network" },
+      { title: 'Comunidad Especialistas', component: ListtopicscommunityPage, icon: "ios-school" }
     ];
 
   }
