@@ -10,12 +10,12 @@ export class UtilitiesService {
 
     getPatients() {
         return [
-            { "name": "Juan Carlos Restrepo", "age": "24", "state_exam":2, "gender": "Hombre", "avatar": "assets/avatars/1.png", "id": 1, "phonenumber": "3166266373", "color": "warm-1", "lastreview": "Feb 25, 2017" },
-            { "name": "Monica Lucia Gil", "age": "33", "state_exam":3, "gender": "Mujer", "avatar": "assets/avatars/2.png", "id": 2, "phonenumber": "3166266373", "color": "warm-2", "lastreview": "Ago 23, 2017" },
-            { "name": "David Nolberto Gonzalez", "state_exam":1, "age": "30", "gender": "Hombre", "avatar": "assets/avatars/3.png", "id": 3, "phonenumber": "3166266373", "color": "warm-3", "lastreview": "Jun 15, 2017" },
-            { "name": "Laura Maria Betancur", "state_exam":2, "age": "21", "gender": "Mujer", "avatar": "assets/avatars/4.png", "id": 4, "phonenumber": "3166266373", "color": "warm-4", "lastreview": "Nov 1, 2017" },
-            { "name": "Esteban Salazar", "state_exam":1, "age": "44", "gender": "Hombre", "id": 5, "avatar": "assets/avatars/5.png", "phonenumber": "3166266373", "color": "warm-5", "lastreview": "Nov 1, 2017" },
-            { "name": "Jhon Garces", "state_exam":1, "age": "34", "gender": "Hombre", "avatar": "assets/avatars/6.png", "id": 6, "phonenumber": "3166266373", "color": "warm-6", "lastreview": "Dic 26, 2017" }
+            { "name": "Juan Carlos Restrepo", "age": "24", "state_exam": 2, "gender": "Hombre", "avatar": "assets/avatars/1.png", "id": 1, "phonenumber": "3166266373", "color": "warm-1", "lastreview": "Feb 25, 2017" },
+            { "name": "Monica Lucia Gil", "age": "33", "state_exam": 3, "gender": "Mujer", "avatar": "assets/avatars/2.png", "id": 2, "phonenumber": "3166266373", "color": "warm-2", "lastreview": "Ago 23, 2017" },
+            { "name": "David Nolberto Gonzalez", "state_exam": 1, "age": "30", "gender": "Hombre", "avatar": "assets/avatars/3.png", "id": 3, "phonenumber": "3166266373", "color": "warm-3", "lastreview": "Jun 15, 2017" },
+            { "name": "Laura Maria Betancur", "state_exam": 2, "age": "21", "gender": "Mujer", "avatar": "assets/avatars/4.png", "id": 4, "phonenumber": "3166266373", "color": "warm-4", "lastreview": "Nov 1, 2017" },
+            { "name": "Esteban Salazar", "state_exam": 1, "age": "44", "gender": "Hombre", "id": 5, "avatar": "assets/avatars/5.png", "phonenumber": "3166266373", "color": "warm-5", "lastreview": "Nov 1, 2017" },
+            { "name": "Jhon Garces", "state_exam": 1, "age": "34", "gender": "Hombre", "avatar": "assets/avatars/6.png", "id": 6, "phonenumber": "3166266373", "color": "warm-6", "lastreview": "Dic 26, 2017" }
         ];
     }
 
@@ -120,7 +120,8 @@ export class UtilitiesService {
             "exams": [{
                 "id": "Z001",
                 "name": "Frotis Uñas y Garganta",
-                "state": "2"
+                "state": "2",
+                "link_ref": "assets/files/dummy.png"
             },
             {
                 "id": "Z002",
@@ -524,6 +525,20 @@ export class UtilitiesService {
                 }
             ]
         }
+    }
+
+    getCongressDetail() {
+        return [
+            { "time": "8:30-9:00", "tittle": "Registro de participantes", "detail": "Hall Principal" },
+            { "time": "9:00-9:30", "tittle": "Bienvenida", "detail": "Dirk Jaspers, Director CELADE-División de Población de la CEPAL" },
+            { "time": "9:30-10:30", "tittle": "Derechos, políticas públicas, y salud", "detail": "En el presente trabajo nos proponemos exponer un panorama exhaustivo de la cuestión, abordándola desde tres miradas absolutamente imprescindibles: la del derecho, la de las políticas públicas y la de la salud" },
+            { "time": "10:30-10:45", "tittle": "Café", "detail": "Plazoleta comidas." },
+            { "time": "10:45-13:00 ", "tittle": "Continuación sesión 1 ", "detail": "Políticas públicas y salud intercultural en el marco de los derechos humanos" },
+            { "time": "13:00-14:30", "tittle": "Almuerzo", "detail": "Plazoleta comidas." },
+            { "time": "14:30-16:30 ", "tittle": "Avances en políticas y programas nacionales", "detail": "Mecanismos de participación " },
+            { "time": "16:30-16:45", "tittle": "Café", "detail": "Plazoleta comidas." },
+            { "time": "16:30-18:00", "tittle": "Políticas y programas territoriales y autónomos", "detail": "Orden ancestral para la vida, modelo de atención en salud" }
+        ];
     }
 
 

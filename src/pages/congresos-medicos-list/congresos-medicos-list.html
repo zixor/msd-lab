@@ -22,6 +22,14 @@
             <h3> {{congres.date}}</h3>
             <p style="color: #FFA730">{{congres.location}}</p>
           </ion-item>
+          <ion-row>
+            <ion-col>
+              <button ion-button icon-left clear small (click)="showDetail();">
+                <ion-icon name="ios-alert-outline"></ion-icon>
+                <div>Detalle de Evento</div>
+             </button>
+            </ion-col>
+          </ion-row>
         </ion-card-content>
       </ion-card>
     </ion-item>

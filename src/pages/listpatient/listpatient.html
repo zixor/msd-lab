@@ -21,7 +21,7 @@
         <ion-avatar item-left>
                 <img src="{{patient.avatar}}">
         </ion-avatar>
-        <h3 item-center *ngIf="patient">{{patient.name}}</h3>
+        <h3 item-center *ngIf="patient" text-wrap>{{patient.name}}</h3>
         <p item-center *ngIf="patient"> Edad - {{patient.age}} años</p>
         
         <button ion-button *ngIf="patient.state_exam == 1" item-right icon-center color="danger">        
