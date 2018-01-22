@@ -10,12 +10,12 @@ export class UtilitiesService {
 
     getPatients() {
         return [
-            { "name": "Juan Carlos Restrepo", "age": "24", "gender": "Hombre", "avatar": "assets/avatars/1.png", "id": 1, "phonenumber": "3166266373", "color": "warm-1", "lastreview": "Feb 25, 2017" },
-            { "name": "Monica Lucia Gil", "age": "33", "gender": "Mujer", "avatar": "assets/avatars/2.png", "id": 2, "phonenumber": "3166266373", "color": "warm-2", "lastreview": "Ago 23, 2017" },
-            { "name": "David Nolberto Gonzalez", "age": "30", "gender": "Hombre", "avatar": "assets/avatars/3.png", "id": 3, "phonenumber": "3166266373", "color": "warm-3", "lastreview": "Jun 15, 2017" },
-            { "name": "Laura Maria Betancur", "age": "21", "gender": "Mujer", "avatar": "assets/avatars/4.png", "id": 4, "phonenumber": "3166266373", "color": "warm-4", "lastreview": "Nov 1, 2017" },
-            { "name": "Esteban Salazar", "age": "44", "gender": "Hombre", "id": 5, "avatar": "assets/avatars/5.png", "phonenumber": "3166266373", "color": "warm-5", "lastreview": "Nov 1, 2017" },
-            { "name": "Jhon Garces", "age": "34", "gender": "Hombre", "avatar": "assets/avatars/6.png", "id": 6, "phonenumber": "3166266373", "color": "warm-6", "lastreview": "Dic 26, 2017" }
+            { "name": "Juan Carlos Restrepo", "age": "24", "state_exam":2, "gender": "Hombre", "avatar": "assets/avatars/1.png", "id": 1, "phonenumber": "3166266373", "color": "warm-1", "lastreview": "Feb 25, 2017" },
+            { "name": "Monica Lucia Gil", "age": "33", "state_exam":3, "gender": "Mujer", "avatar": "assets/avatars/2.png", "id": 2, "phonenumber": "3166266373", "color": "warm-2", "lastreview": "Ago 23, 2017" },
+            { "name": "David Nolberto Gonzalez", "state_exam":1, "age": "30", "gender": "Hombre", "avatar": "assets/avatars/3.png", "id": 3, "phonenumber": "3166266373", "color": "warm-3", "lastreview": "Jun 15, 2017" },
+            { "name": "Laura Maria Betancur", "state_exam":2, "age": "21", "gender": "Mujer", "avatar": "assets/avatars/4.png", "id": 4, "phonenumber": "3166266373", "color": "warm-4", "lastreview": "Nov 1, 2017" },
+            { "name": "Esteban Salazar", "state_exam":1, "age": "44", "gender": "Hombre", "id": 5, "avatar": "assets/avatars/5.png", "phonenumber": "3166266373", "color": "warm-5", "lastreview": "Nov 1, 2017" },
+            { "name": "Jhon Garces", "state_exam":1, "age": "34", "gender": "Hombre", "avatar": "assets/avatars/6.png", "id": 6, "phonenumber": "3166266373", "color": "warm-6", "lastreview": "Dic 26, 2017" }
         ];
     }
 

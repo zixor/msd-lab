@@ -24,13 +24,18 @@
         <h3 item-center *ngIf="patient">{{patient.name}}</h3>
         <p item-center *ngIf="patient"> Edad - {{patient.age}} años</p>
         
-
-
-        <button ion-button *ngIf="patient.id==2" item-right icon-center color="secondary">        
+        <button ion-button *ngIf="patient.state_exam == 1" item-right icon-center color="danger">        
+          <p style="padding-right: 5px; color: white;">Sin Realizar </p>
           <ion-icon name="md-flask" ></ion-icon>
         </button>
 
-       <button ion-button *ngIf="patient.id !=2 " item-right icon-center color="danger">        
+        <button ion-button *ngIf="patient.state_exam == 2" item-right icon-center color="warm-18">        
+          <p style="padding-right: 5px; color: white;">Laboratorio </p>
+          <ion-icon style="color: white;" name="md-flask" ></ion-icon>
+        </button>
+
+       <button ion-button *ngIf="patient.state_exam == 3 " item-right icon-center color="secundary">        
+         <p style="padding-right: 5px; color: white;">Terminado </p>
           <ion-icon name="md-flask"></ion-icon>
         </button>
 
