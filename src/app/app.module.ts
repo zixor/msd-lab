@@ -22,6 +22,8 @@ import { ExamDetailPage } from "../pages/exam-detail/exam-detail";
 import { CongresosMedicosListPage } from "../pages/congresos-medicos-list/congresos-medicos-list";
 import { ListchatsPage } from "../pages/listchats/listchats";
 import { CongressdetailPage } from "../pages/congressdetail/congressdetail";
+import { SpecialistPage } from "../pages/specialistpage/specialistpage";
+import { TimeAgoPipe } from "time-ago-pipe";
 
 @NgModule({
   declarations: [
@@ -41,6 +43,8 @@ import { CongressdetailPage } from "../pages/congressdetail/congressdetail";
     CongresosMedicosListPage,
     ListchatsPage,
     CongressdetailPage,
+    SpecialistPage,
+    TimeAgoPipe,
   ],
   imports: [
     BrowserModule,
@@ -64,6 +68,7 @@ import { CongressdetailPage } from "../pages/congressdetail/congressdetail";
     CongresosMedicosListPage,
     ListchatsPage,
     CongressdetailPage,
+    SpecialistPage
   ],
   providers: [
     StatusBar,

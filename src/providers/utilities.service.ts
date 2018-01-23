@@ -437,110 +437,165 @@ export class UtilitiesService {
     }
 
     getListMessage() {
-        return {
-            "array": [
-                {
-                    "messageId": "1",
-                    "userId": "140000198202211138",
-                    "userName": "Guillermo Andrés Velasco B.",
-                    "userImgUrl": "./assets/avatars/profesional.png",
-                    "toUserId": "210000198410281948",
-                    "toUserName": "Especialistas",
-                    "userAvatar": "./assets/avatars/1.png",
-                    "time": 1488349800000,
-                    "message": "A good programmer is someone who always looks both ways before crossing a one-way street. ",
-                    "status": "success"
-                },
-                {
-                    "messageId": "2",
-                    "userId": "210000198410281948",
-                    "userName": "Especialistas",
-                    "userImgUrl": "./assets/avatars/profesional.png",
-                    "toUserId": "140000198202211138",
-                    "toUserName": "Guillermo Andrés Velasco B.",
-                    "userAvatar": "./assets/avatars/1.png",
-                    "time": 1491034800000,
-                    "message": "Don’t worry if it doesn't work right. If everything did, you’d be out of a job.",
-                    "status": "success"
-                },
-                {
-                    "messageId": "3",
-                    "userId": "140000198202211138",
-                    "userName": "Guillermo Andrés Velasco B.",
-                    "userImgUrl": "./assets/avatars/profesional.png",
-                    "toUserId": "210000198410281948",
-                    "toUserName": "Especialistas",
-                    "userAvatar": "./assets/avatars/1.png",
-                    "time": 1491034920000,
-                    "message": "Most of you are familiar with the virtues of a programmer. There are three, of course: laziness, impatience, and hubris.",
-                    "status": "success"
-                },
-                {
-                    "messageId": "4",
-                    "userId": "210000198410281948",
-                    "userName": "Especialistas",
-                    "userImgUrl": "./assets/avatars/1.png",
-                    "toUserId": "140000198202211138",
-                    "toUserName": "Guillermo Andrés Velasco B.",
-                    "userAvatar": "./assets/avatars/profesional.png",
-                    "time": 1491036720000,
-                    "message": "One man’s crappy software is another man’s full time job.",
-                    "status": "success"
-                },
-                {
-                    "messageId": "5",
-                    "userId": "210000198410281948",
-                    "userName": "Especialistas",
-                    "userImgUrl": "./assets/avatars/1.png",
-                    "toUserId": "140000198202211138",
-                    "toUserName": "Guillermo Andrés Velasco B.",
-                    "userAvatar": "./assets/avatars/profesional.png",
-                    "time": 1491108720000,
-                    "message": "Programming is 10% science, 20% ingenuity, and 70% getting the ingenuity to work with the science.",
-                    "status": "success"
-                },
-                {
-                    "messageId": "6",
-                    "userId": "140000198202211138",
-                    "userName": "Guillermo Andrés Velasco B.",
-                    "userImgUrl": "./assets/user.jpg",
-                    "toUserId": "210000198410281948",
-                    "toUserName": "Especialistas",
-                    "userAvatar": "./assets/to-user.jpg",
-                    "time": 1491231120000,
-                    "message": "If at first you don’t succeed, call it version 1.0",
-                    "status": "success"
-                },
-                {
-                    "messageId": "7",
-                    "userId": "140000198202211138",
-                    "userName": "Guillermo Andrés Velasco B.",
-                    "userImgUrl": "./assets/user.jpg",
-                    "toUserId": "210000198410281948",
-                    "toUserName": "Especialistas",
-                    "userAvatar": "./assets/to-user.jpg",
-                    "time": 1491231150000,
-                    "message": "The <textarea> tag defines a multi-line text input control.\nA text area can hold an unlimited number of characters, and the text renders in a fixed-width font (usually Courier).\nThe size of a text area can be specified by the cols and rows attributes, or even better; through CSS' height and width properties.",
-                    "status": "success"
-                }
-            ]
-        }
+        return [
+            {
+                "messageId": "1",
+                "userId": "140000198202211138",
+                "userName": "Guillermo Andrés Velasco B.",
+                "userImgUrl": "./assets/avatars/profesional.png",
+                "toUserId": "210000198410281948",
+                "toUserName": "Especialistas",
+                "userAvatar": "./assets/avatars/1.png",
+                "time": 1488349800000,
+                "message": "Buenas tardes Doc. Como está? ",
+                "status": "success"
+            },
+            {
+                "messageId": "2",
+                "userId": "210000198410281948",
+                "userName": "Especialistas",
+                "userImgUrl": "./assets/avatars/profesional.png",
+                "toUserId": "140000198202211138",
+                "toUserName": "Guillermo Andrés Velasco B.",
+                "userAvatar": "./assets/avatars/profesional.png",
+                "time": 1491034800000,
+                "message": "Muy bien gracias y como vas ?",
+                "status": "success"
+            },
+            {
+                "messageId": "3",
+                "userId": "140000198202211138",
+                "userName": "Guillermo Andrés Velasco B.",
+                "userImgUrl": "./assets/avatars/profesional.png",
+                "toUserId": "210000198410281948",
+                "toUserName": "Especialistas",
+                "userAvatar": "./assets/avatars/1.png",
+                "time": 1491034920000,
+                "message": "Todo muy bien thanks!. Doc, Tengo una duda sobre el procedimiento ABCD. Mi duda en particular es referente a la cantidad a suministrar.",
+                "status": "success"
+            },
+            {
+                "messageId": "4",
+                "userId": "210000198410281948",
+                "userName": "Especialistas",
+                "userImgUrl": "./assets/avatars/1.png",
+                "toUserId": "140000198202211138",
+                "toUserName": "Guillermo Andrés Velasco B.",
+                "userAvatar": "./assets/avatars/profesional.png",
+                "time": 1491036720000,
+                "message": "Ya veo, pero sabes!, depende del paciente. Es adulto o niño ?",
+                "status": "success"
+            },
+            {
+                "messageId": "5",
+                "userId": "140000198202211138",
+                "userName": "Guillermo Andrés Velasco B.",
+                "userImgUrl": "./assets/avatars/profesional.png",
+                "toUserId": "210000198410281948",
+                "toUserName": "Especialistas",
+                "userAvatar": "./assets/avatars/1.png",
+                "time": 1491108720000,
+                "message": "Adulto Doc.",
+                "status": "success"
+            },
+            {
+                "messageId": "6",
+                "userId": "210000198410281948",
+                "userName": "Especialistas",
+                "userImgUrl": "./assets/avatars/1.png",
+                "toUserId": "140000198202211138",
+                "toUserName": "Guillermo Andrés Velasco B.",
+                "userAvatar": "./assets/avatars/profesional.png",
+                "time": 1491231120000,
+                "message": "Ok, Entiendo suminístrale 500 grs!",
+                "status": "success"
+            },
+            {
+                "messageId": "7",
+                "userId": "140000198202211138",
+                "userName": "Guillermo Andrés Velasco B.",
+                "userImgUrl": "./assets/avatars/1.png",
+                "toUserId": "210000198410281948",
+                "toUserName": "Especialistas",
+                "userAvatar": "./assets/avatars/1.png",
+                "time": 1491231150000,
+                "message": "Ok, Muchas gracias por su ayuda Doc.",
+                "status": "success"
+            },
+             {
+                "messageId": "1",
+                "userId": "210000198410281948",
+                "userName": "Especialistas",
+                "userImgUrl": "./assets/avatars/1.png",
+                "toUserId": "140000198202211138",
+                "toUserName": "Guillermo Andrés Velasco B.",
+                "userAvatar": "./assets/avatars/profesional.png",
+                "time": 1488349800000,
+                "message": "Con gusto no dudes en consultar nuevamente si tienes alguna duda. ",
+                "status": "success"
+            },
+            {
+                "messageId": "2",
+                "userId": "140000198202211138",
+                "userName": "Guillermo Andrés Velasco B.",
+                "userImgUrl": "./assets/avatars/profesional.png",
+                "toUserId": "210000198410281948",
+                "toUserName": "Especialistas",
+                "userAvatar": "./assets/avatars/1.png",
+                "time": 1491034800000,
+                "message": "Genial!, feliz tarde.",
+                "status": "success"
+            },
+            {
+                "messageId": "3",
+                "userId": "210000198410281948",
+                "userName": "Especialistas",
+                "userImgUrl": "./assets/avatars/1.png",
+                "toUserId": "140000198202211138",
+                "toUserName": "Guillermo Andrés Velasco B.",
+                "userAvatar": "./assets/avatars/profesional.png",
+                "time": 1491034920000,
+                "message": "Hasta pronto!",
+                "status": "success"
+            }
+        ];
+
     }
 
     getCongressDetail() {
         return [
-            { "time": "8:30-9:00", "tittle": "Registro de participantes", "detail": "Hall Principal" },
-            { "time": "9:00-9:30", "tittle": "Bienvenida", "detail": "Dirk Jaspers, Director CELADE-División de Población de la CEPAL" },
-            { "time": "9:30-10:30", "tittle": "Derechos, políticas públicas, y salud", "detail": "En el presente trabajo nos proponemos exponer un panorama exhaustivo de la cuestión, abordándola desde tres miradas absolutamente imprescindibles: la del derecho, la de las políticas públicas y la de la salud" },
-            { "time": "10:30-10:45", "tittle": "Café", "detail": "Plazoleta comidas." },
-            { "time": "10:45-13:00 ", "tittle": "Continuación sesión 1 ", "detail": "Políticas públicas y salud intercultural en el marco de los derechos humanos" },
-            { "time": "13:00-14:30", "tittle": "Almuerzo", "detail": "Plazoleta comidas." },
-            { "time": "14:30-16:30 ", "tittle": "Avances en políticas y programas nacionales", "detail": "Mecanismos de participación " },
-            { "time": "16:30-16:45", "tittle": "Café", "detail": "Plazoleta comidas." },
-            { "time": "16:30-18:00", "tittle": "Políticas y programas territoriales y autónomos", "detail": "Orden ancestral para la vida, modelo de atención en salud" }
+            { "time": "8:30-9:00", "title": "Registro de participantes", "detail": "Hall Principal" },
+            { "time": "9:00-9:30", "title": "Bienvenida", "detail": "Dirk Jaspers, Director CELADE-División de Población de la CEPAL" },
+            { "time": "9:30-10:30", "title": "Derechos, políticas públicas, y salud", "detail": "En el presente trabajo nos proponemos exponer un panorama exhaustivo de la cuestión, abordándola desde tres miradas absolutamente imprescindibles: la del derecho, la de las políticas públicas y la de la salud" },
+            { "time": "10:30-10:45", "title": "Café", "detail": "Plazoleta comidas." },
+            { "time": "10:45-13:00 ", "title": "Continuación sesión 1 ", "detail": "Políticas públicas y salud intercultural en el marco de los derechos humanos" },
+            { "time": "13:00-14:30", "title": "Almuerzo", "detail": "Plazoleta comidas." },
+            { "time": "14:30-16:30 ", "title": "Avances en políticas y programas nacionales", "detail": "Mecanismos de participación " },
+            { "time": "16:30-16:45", "title": "Café", "detail": "Plazoleta comidas." },
+            { "time": "16:30-18:00", "title": "Políticas y programas territoriales y autónomos", "detail": "Orden ancestral para la vida, modelo de atención en salud" }
         ];
     }
 
+
+    getListTopics() {
+        return [
+            { "title": "Chat con Especialista", "icon": "ios-chatbubbles-outline", "color": "secondary", "id": 1 },
+            { "title": "Foros", "icon": "ios-megaphone-outline", "color": "primary", "id": 2 },
+            { "title": "Publicaciones", "icon": "ios-eye-outline", "color": "warm-17", "id": 3 },
+        ];
+
+    }
+
+    getSpecialists() {
+        return [
+            { "name": "Guillermo Andrés Velasco B.", "medical_speciality": "Urólogo", "avatar": "assets/avatars/1.png", "id": 1, "phonenumber": "3166266373" },
+            { "name": "Juan Carlos Avila", "medical_speciality": "Urólogo", "avatar": "assets/avatars/8.png", "id": 2, "phonenumber": "3166266373" },
+            { "name": "Maria Cecilia Turizo", "medical_speciality": "Urólogo", "avatar": "assets/avatars/7.png", "id": 3, "phonenumber": "3166266373" },
+            { "name": "Fabian Raigoza", "medical_speciality": "Urólogo", "avatar": "assets/avatars/9.png", "id": 4, "phonenumber": "3166266373" },
+            { "name": "Juan Velz", "id": 5, "medical_speciality": "Urólogo", "avatar": "assets/avatars/10.png", "phonenumber": "3166266373" },
+            { "name": "Jhon Garces", "medical_speciality": "Urólogo", "avatar": "assets/avatars/11.png", "id": 6, "phonenumber": "3166266373" }
+        ];
+    }
 
 
 }

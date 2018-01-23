@@ -18,18 +18,18 @@ export class MyApp {
 
   rootPage: any = HomePage;
 
-  pages: Array<{title: string, component: any, icon: string }>;
+  pages: Array<{title: string, component: any, icon: string, color:string }>;
 
   constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
     this.initializeApp();
 
     // used for an example of ngFor and navigation
     this.pages = [
-      { title: 'DashBoard', component: HomePage, icon: "ios-analytics" },
-      { title: 'Pacientes', component: ListpatientPage,  icon: "ios-people"},       
-      { title: 'Laboratorios', component: ListlabsPage, icon: "ios-flask" },
-      { title: 'Congresos Médicos', component: CongresosMedicosListPage, icon: "ios-git-network" },
-      { title: 'Comunidad Especialistas', component: ListchatsPage, icon: "ios-school" }
+      { title: 'DashBoard', component: HomePage, icon: "ios-analytics-outline", color: "secondary" },
+      { title: 'Pacientes', component: ListpatientPage,  icon: "ios-people-outline", color: "primary" },       
+      { title: 'Laboratorios', component: ListlabsPage, icon: "ios-flask-outline" , color: "warm-18" },
+      { title: 'Congresos Médicos', component: CongresosMedicosListPage, icon: "ios-git-network" , color: "header" },
+      { title: 'Comunidad Especialistas', component: ListtopicscommunityPage, icon: "ios-school-outline" , color: "warm-0" }
     ];
 
   }

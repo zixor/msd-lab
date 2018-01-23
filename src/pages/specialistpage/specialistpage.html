@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-navbar color="header">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title style="text-align:center;">
+      Especialistas
+    </ion-title>
+    <ion-buttons end>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+
+  <ion-list>
+    <ion-item *ngFor="let specialist of specialists" (click)="edit(specialist.id);">
+      <ion-avatar item-left>
+        <img src="{{specialist.avatar}}">
+      </ion-avatar>
+      <h3 item-center *ngIf="specialist" text-wrap>{{specialist.name}}</h3>
+      <p item-center *ngIf="specialist"> {{specialist.medical_speciality}}</p>
+    </ion-item>
+  </ion-list>
+
+</ion-content>
