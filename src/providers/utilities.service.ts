@@ -522,7 +522,7 @@ export class UtilitiesService {
                 "message": "Ok, Muchas gracias por su ayuda Doc.",
                 "status": "success"
             },
-             {
+            {
                 "messageId": "1",
                 "userId": "210000198410281948",
                 "userName": "Especialistas",
@@ -594,6 +594,52 @@ export class UtilitiesService {
             { "name": "Fabian Raigoza", "medical_speciality": "Urólogo", "avatar": "assets/avatars/9.png", "id": 4, "phonenumber": "3166266373" },
             { "name": "Juan Velz", "id": 5, "medical_speciality": "Urólogo", "avatar": "assets/avatars/10.png", "phonenumber": "3166266373" },
             { "name": "Jhon Garces", "medical_speciality": "Urólogo", "avatar": "assets/avatars/11.png", "id": 6, "phonenumber": "3166266373" }
+        ];
+    }
+
+    getPublishings() {
+        return [
+            {
+                "id": 1,
+                "date": "Enero 12, 2018",
+                "specialist": { "name": "Guillermo Andrés Velasco B.", "medical_speciality": "Urólogo", "avatar": "assets/avatars/1.png", "id": 1, "phonenumber": "3166266373" },
+                "name": "Alergología.", "description": "La alergia es una respuesta exagerada " + "(reacción de hipersensibilidad) del sistema defensivo (sistema inmunitario) "
+                + "del paciente que identifica como nocivas determinadas sustancias inocuas (como pueden ser los pólenes de algunas plantas o los ácaros del polvo doméstico, " +
+                "por ejemplo) habitualmente toleradas por la mayoría de las personas.",
+                "img": "assets/imgs/Alergologia.jpg",
+                "link": "https://www.barnaclinic.com/es/especialidades/139/alergologia"
+            },
+            {
+                "id": 2,
+                "date": "Diciembre 8, 2017",
+                "specialist": { "name": "Juan Carlos Avila", "medical_speciality": "Urólogo", "avatar": "assets/avatars/8.png", "id": 2, "phonenumber": "3166266373" },
+                "name": "Análisis Clínicos .", "description": "Los análisis clínicos también son conocidos como pruebas de laboratorio y consisten " +
+                "básicamente en el estudio de los componentes de muestras biológicas que se toman del cuerpo, tales como la sangre, la orina, " +
+                "el tejido, etc. Los resultados de los análisis clínicos son de valiosa utilidad para el médico ya que le permiten confirmar o " +
+                " descartar un determinado diagnóstico.",
+                "img": "assets/imgs/analisis-clinico.jpg",
+                "link": "http://www.educativo.net/articulos/que-son-los-analisis-clinicos-1142.html"
+            },
+            {
+                "id": 3,
+                "date": "Noviembre 30, 2017",
+                "specialist": { "name": "Maria Cecilia Turizo", "medical_speciality": "Urólogo", "avatar": "assets/avatars/7.png", "id": 3, "phonenumber": "3166266373" },
+                "name": "Anatomía Patológica .", "description": "La salud en general y la medicina en particular están experimentado grandes " +
+                "transformaciones en este siglo xxi, y su devenir en el próximo futuro está basado en condicionantes que dependen en buena medida " +
+                "de las nuevas tecnologías diagnósticas y terapéuticas",
+                "img": "assets/imgs/anatomia_patologica.jpg",
+                "link": "http://www.elsevier.es/es-revista-revista-espanola-patologia-297-articulo-la-evolucion-anatomia-patologica-hacia-S1699885517300284"
+            },
+            {
+                "id": 4,
+                "date": "Noviembre 12, 2017",
+                "specialist": { "name": "Fabian Raigoza", "medical_speciality": "Urólogo", "avatar": "assets/avatars/9.png", "id": 4, "phonenumber": "3166266373" },
+                "name": "Anestesiología y Reanimación.", "description": "En esta sección pueden consultar los trabajos, artículos, ensayos, estudios," +
+                " investigaciones etc. de las especialidades de Anestesiología y Reanimación.",
+                "img": "assets/imgs/anastesiologia.jpg",
+                "link": "https://www.portalesmedicos.com/publicaciones/categories/Articulos/Anestesiologia-y-Reanimacion/"
+            },
+
         ];
     }
 

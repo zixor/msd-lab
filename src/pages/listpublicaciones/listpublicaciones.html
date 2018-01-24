@@ -1,0 +1,56 @@
+<ion-header>
+  <ion-navbar color="header">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title style="text-align:center;">
+      Publicaciones
+    </ion-title>
+    <ion-buttons end>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-card *ngFor="let publishing of publishings">
+
+    <ion-item>
+      <ion-avatar item-start>
+        <img src="{{publishing.specialist.avatar}}">
+      </ion-avatar>
+      <h2>{{publishing.specialist.name}}</h2>
+      <p>{{publishing.specialist.date}}</p>
+    </ion-item>
+
+    <img style="width:100%;height:70%;" src="{{publishing.img}}">
+
+    <ion-card-content>
+      <h2>{{publishing.name}}</h2>
+      <p>{{publishing.description}}</p>
+    </ion-card-content>
+
+    <ion-row>
+      <ion-col>
+        <button ion-button icon-left clear small>
+        <ion-icon name="thumbs-up"></ion-icon>
+        <div>12 Likes</div>
+      </button>
+      </ion-col>
+      <ion-col>
+        <button ion-button icon-left clear small>
+        <ion-icon name="text"></ion-icon>
+        <div>4 Comentarios</div>
+      </button>
+      </ion-col>
+      <ion-col>
+        <button ion-button icon-left clear small>
+        <ion-icon name="ios-more-outline"></ion-icon>
+        <div>Ver Publicación</div>
+      </button>
+      </ion-col>
+    </ion-row>
+  </ion-card>
+
+</ion-content>

@@ -24,6 +24,7 @@ import { ListchatsPage } from "../pages/listchats/listchats";
 import { CongressdetailPage } from "../pages/congressdetail/congressdetail";
 import { SpecialistPage } from "../pages/specialistpage/specialistpage";
 import { TimeAgoPipe } from "time-ago-pipe";
+import { ListpublicacionesPage } from "../pages/listpublicaciones/listpublicaciones";
 
 @NgModule({
   declarations: [
@@ -45,6 +46,7 @@ import { TimeAgoPipe } from "time-ago-pipe";
     CongressdetailPage,
     SpecialistPage,
     TimeAgoPipe,
+    ListpublicacionesPage,
   ],
   imports: [
     BrowserModule,
@@ -68,7 +70,8 @@ import { TimeAgoPipe } from "time-ago-pipe";
     CongresosMedicosListPage,
     ListchatsPage,
     CongressdetailPage,
-    SpecialistPage
+    SpecialistPage,
+    ListpublicacionesPage
   ],
   providers: [
     StatusBar,

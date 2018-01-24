@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { UtilitiesService } from "../../providers/utilities.service";
 import { SpecialistPage } from "../specialistpage/specialistpage";
+import { ListpublicacionesPage } from "../listpublicaciones/listpublicaciones";
 
 @Component({
   selector: 'page-listtopicscommunity',
@@ -23,6 +24,10 @@ export class ListtopicscommunityPage {
   openNavDetailsPage(item) {
     if(item.id == 1 ){
       this.navCtrl.push(SpecialistPage);
+    }else if(item.id == 2){
+
+    }else{
+      this.navCtrl.push(ListpublicacionesPage);
     }
   }
 
