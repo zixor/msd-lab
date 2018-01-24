@@ -6,7 +6,7 @@
     <ion-title style="text-align:center;">
       Pacientes
     </ion-title>
-    <ion-buttons end>      
+    <ion-buttons end>
     </ion-buttons>
   </ion-navbar>
 </ion-header>
@@ -16,26 +16,48 @@
 
   <ion-list>
 
+    <ion-list-header>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <button ion-button small item-right icon-center color="danger">                                
+              Sin Realizar
+            </button>
+          </ion-col>
+          <ion-col>
+            <button ion-button small item-right icon-center color="warm-18">    
+             <p style="color:white;"> En Laboratorio</p>
+            </button>
+          </ion-col>
+          <ion-col>
+            <button ion-button small item-right icon-center color="secundary">   
+              Finalizado                  
+            </button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-list-header>
+
     <ion-item-sliding *ngFor="let patient of patients">
       <ion-item (click)="edit(patient.id)">
         <ion-avatar item-left>
-                <img src="{{patient.avatar}}">
+          <img src="{{patient.avatar}}">
         </ion-avatar>
         <h3 item-center *ngIf="patient" text-wrap>{{patient.name}}</h3>
         <p item-center *ngIf="patient"> Edad - {{patient.age}} años</p>
-        
+
         <button ion-button *ngIf="patient.state_exam == 1" item-right icon-center color="danger">        
-          <p style="padding-right: 5px; color: white;">Sin Realizar </p>
+          
           <ion-icon name="md-flask" ></ion-icon>
         </button>
 
         <button ion-button *ngIf="patient.state_exam == 2" item-right icon-center color="warm-18">        
-          <p style="padding-right: 5px; color: white;">Laboratorio </p>
+          
           <ion-icon style="color: white;" name="md-flask" ></ion-icon>
         </button>
 
-       <button ion-button *ngIf="patient.state_exam == 3 " item-right icon-center color="secundary">        
-         <p style="padding-right: 5px; color: white;">Terminado </p>
+        <button ion-button *ngIf="patient.state_exam == 3 " item-right icon-center color="secundary">        
+         
           <ion-icon name="md-flask"></ion-icon>
         </button>
 

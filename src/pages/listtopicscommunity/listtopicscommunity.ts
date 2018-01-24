@@ -3,6 +3,7 @@ import { NavController, NavParams } from 'ionic-angular';
 import { UtilitiesService } from "../../providers/utilities.service";
 import { SpecialistPage } from "../specialistpage/specialistpage";
 import { ListpublicacionesPage } from "../listpublicaciones/listpublicaciones";
+import { ListforumPage } from "../listforum/listforum";
 
 @Component({
   selector: 'page-listtopicscommunity',
@@ -22,11 +23,11 @@ export class ListtopicscommunityPage {
   }
 
   openNavDetailsPage(item) {
-    if(item.id == 1 ){
+    if (item.id == 1) {
       this.navCtrl.push(SpecialistPage);
-    }else if(item.id == 2){
-
-    }else{
+    } else if (item.id == 2) {
+      this.navCtrl.push(ListforumPage);
+    } else {
       this.navCtrl.push(ListpublicacionesPage);
     }
   }

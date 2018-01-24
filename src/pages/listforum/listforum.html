@@ -1,0 +1,51 @@
+<ion-header>
+  <ion-navbar color="header">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title style="text-align:center;">
+      Foros
+    </ion-title>
+    <ion-buttons end>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-card *ngFor="let forum of forums" (click)="detail();">
+
+    <ion-item>
+      <ion-avatar item-start>
+        <img src="{{forum.specialist.avatar}}">
+      </ion-avatar>
+      <h2>{{forum.specialist.name}}</h2>
+      <p>{{forum.date | timeAgo}}</p>
+    </ion-item>
+
+    <ion-card-content>
+      <h2><b>{{forum.topic}}</b></h2> 
+      Tags: <p style="margin-left: 5px; color:#4484ce;">{{forum.tags}}</p>
+      <p style="margin-left: 5px;">{{forum.question}}</p>
+      <div style="border-left: 5px solid #4484ce;"> <p style="margin-left: 5px;"><b>Narrativa:</b> {{forum.narrative}}</p> </div>
+    </ion-card-content>
+
+    <ion-row>
+      <ion-col>
+        <button ion-button icon-left clear small>
+        <ion-icon name="text"></ion-icon>
+        <div>4 Comentarios</div>
+      </button>
+      </ion-col>
+    </ion-row>
+  </ion-card>
+  
+  <br>
+  <ion-fab right bottom>
+    <button ion-fab color="warm-17" (click)="onAddClick()">
+      <ion-icon name="add"></ion-icon>
+    </button>
+  </ion-fab>
+
+</ion-content>

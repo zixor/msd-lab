@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-navbar color="header">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title style="text-align:center;">
+       {{ forum.topic || 'Nuevo Foro' }}
+    </ion-title>
+    <ion-buttons end>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-list>   
+    <ion-item>
+      <ion-label floating>Tema</ion-label>
+      <ion-input type="text" [(ngModel)]="forum.topic"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>Pregunta</ion-label>
+      <ion-input type="text" [(ngModel)]="forum.question"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>Narrativa o Descripción</ion-label>
+      <ion-input type="text" [(ngModel)]="forum.narrative"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>Tags</ion-label>
+      <ion-input type="text" [(ngModel)]="forum.tags"></ion-input>
+    </ion-item>
+  </ion-list>
+  <button ion-button block color="warm-17" (click)="save();">Guardar</button>
+
+</ion-content>

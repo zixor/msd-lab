@@ -1,8 +1,18 @@
 
 import { Injectable } from '@angular/core';
+import { Forum } from "../models/forum.model";
 
 @Injectable()
 export class UtilitiesService {
+
+    public forums: Forum[] = [{
+        date: 1515792180000,
+        specialist: { "name": "Guillermo Andrés Velasco B.", "medical_speciality": "Urólogo", "avatar": "assets/avatars/1.png", "id": 1, "phonenumber": "3166266373" },
+        topic: "Cirugía Plastica",
+        question: "Cuál es la normativa vigente para realizar una cirugía plástica?",
+        narrative: "La presente ley tiene por objeto reglamentar el ejercicio de la cirugía plástica, estética y reconstructiva en Colombia; y establecer otras disposiciones relacionadas con los procedimientos, insumos y medicamentos aplicados ...",
+        tags: "Cirugía, Normatividad, Legal"
+    }];
 
     constructor() {
 
