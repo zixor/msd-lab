@@ -1,5 +1,5 @@
 <ion-header>
-   <ion-navbar color="header">
+  <ion-navbar color="header">
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
@@ -8,5 +8,63 @@
 </ion-header>
 
 <ion-content padding>
- <ion-img style="padding-left:33%;  padding-top: 130px; width: 50%; height: 60%; background-color: white;" src="./assets/imgs/Merck_Logo.svg.png"></ion-img>
+  <img src="assets/imgs/main.png" class="displayed"/>
+  <ion-grid style="margin-left: 5%;">
+    <ion-row>
+      <ion-col>
+        <ion-fab outline>
+          <button ion-fab mini color="secondary" (click)="goto(1);">
+            <ion-icon name="ios-analytics-outline"></ion-icon>            
+          </button>
+        </ion-fab>        
+      </ion-col>      
+      <ion-col>
+        <ion-fab outline>
+          <button ion-fab mini color="primary" (click)="goto(2);">
+            <ion-icon name="ios-people-outline"></ion-icon>
+          </button>
+        </ion-fab>
+      </ion-col>
+      <ion-col>
+        <ion-fab outline>
+          <button ion-fab mini color="warm-18" (click)="goto(3);">
+            <ion-icon name="ios-flask-outline"></ion-icon>
+          </button>
+        </ion-fab>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col style="margin: 45px 0 0 8px;">Home</ion-col>
+      <ion-col style="margin: 45px 0 0 -6px;">Pacientes</ion-col>
+      <ion-col style="margin: 45px 0 0 -6px;">Laboratorio</ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-fab outline>
+          <button ion-fab mini color="header" (click)="goto(4);">
+            <ion-icon name="ios-git-network"></ion-icon>
+          </button>
+        </ion-fab>
+      </ion-col>
+     <ion-col>
+        <ion-fab outline>
+          <button ion-fab mini color="warm-0" (click)="goto(5);">
+            <ion-icon name="ios-school-outline"></ion-icon>
+          </button>
+        </ion-fab>
+      </ion-col>
+      <ion-col>
+        <ion-fab outline>
+          <button ion-fab mini color="header" (click)="goto(6);">
+            <ion-icon name="ios-call-outline"></ion-icon>
+          </button>
+        </ion-fab>
+      </ion-col>
+    </ion-row>
+     <ion-row>
+      <ion-col style="margin: 45px 0 0 8px;">Congresos Médicos</ion-col>
+      <ion-col style="margin: 45px 0 0 -6px;">Comunidad Especialistas</ion-col>
+      <ion-col style="margin: 45px 0 0 -6px;">Contáctenos</ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>

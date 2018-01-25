@@ -28,6 +28,7 @@ import { ListpublicacionesPage } from "../pages/listpublicaciones/listpublicacio
 import { ForumPage } from "../pages/forum/forum";
 import { ListforumPage } from "../pages/listforum/listforum";
 import { ListdetailforumPage } from "../pages/listdetailforum/listdetailforum";
+import { ContactusPage } from "../pages/contactus/contactus";
 
 @NgModule({
   declarations: [
@@ -53,6 +54,7 @@ import { ListdetailforumPage } from "../pages/listdetailforum/listdetailforum";
     ForumPage,
     ListforumPage,
     ListdetailforumPage,
+    ContactusPage
   ],
   imports: [
     BrowserModule,
@@ -81,6 +83,7 @@ import { ListdetailforumPage } from "../pages/listdetailforum/listdetailforum";
     ForumPage,
     ListforumPage,
     ListdetailforumPage,
+    ContactusPage
   ],
   providers: [
     StatusBar,

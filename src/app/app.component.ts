@@ -9,6 +9,7 @@ import { ListlabsPage } from "../pages/listlabs/listlabs";
 import { ListtopicscommunityPage } from "../pages/listtopicscommunity/listtopicscommunity";
 import { CongresosMedicosListPage } from "../pages/congresos-medicos-list/congresos-medicos-list";
 import { ListchatsPage } from "../pages/listchats/listchats";
+import { ContactusPage } from "../pages/contactus/contactus";
 
 @Component({
   templateUrl: 'app.html'
@@ -25,11 +26,12 @@ export class MyApp {
 
     // used for an example of ngFor and navigation
     this.pages = [
-      { title: 'DashBoard', component: HomePage, icon: "ios-analytics-outline", color: "secondary" },
+      { title: 'Home', component: HomePage, icon: "ios-analytics-outline", color: "secondary" },
       { title: 'Pacientes', component: ListpatientPage,  icon: "ios-people-outline", color: "primary" },       
       { title: 'Laboratorios', component: ListlabsPage, icon: "ios-flask-outline" , color: "warm-18" },
       { title: 'Congresos Médicos', component: CongresosMedicosListPage, icon: "ios-git-network" , color: "header" },
-      { title: 'Comunidad Especialistas', component: ListtopicscommunityPage, icon: "ios-school-outline" , color: "warm-0" }
+      { title: 'Comunidad Especialistas', component: ListtopicscommunityPage, icon: "ios-school-outline" , color: "warm-0" },
+      {title: 'Contáctenos', component: ContactusPage, icon:"ios-call-outline", color:"header"}
     ];
 
   }
